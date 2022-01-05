@@ -86,7 +86,6 @@ public class EmployeeManager {
             public int compare(Employee o1, Employee o2) { // sử dụng thư viện Comparator viết lại hàm so sánh
                 return o1.totalSalary() < o2.totalSalary() ? 1 : -1; // nếu nv1 có lương bé hơn nv2 thì trả về 1 nếu ko
                                                                      // thì trả về -1
-<<<<<<< HEAD
             }
         });
     }
@@ -104,17 +103,11 @@ public class EmployeeManager {
                     return 1;
                 else // các trường hợp còn lại trả về 0
                     return -1;
-=======
->>>>>>> e24dc39 (version 1.0)
             }
         });
     }
 
-<<<<<<< HEAD
     public void sortByIDMaxDownMin() {
-=======
-    public void sortByID() {
->>>>>>> e24dc39 (version 1.0)
         Collections.sort(employees, new Comparator<Employee>() { // sử dụng thư viện có sẵn Collections để sắp xếp, hàm
                                                                  // sẽ sắp xếp khi giá trị trả về là 1
             @Override
@@ -123,11 +116,7 @@ public class EmployeeManager {
                 int id2 = Integer.valueOf(s2.id); // đổi kiểu dữ liệu
                 if (id1 == id2) // trường hợp trùng id trả về 0
                     return 0;
-<<<<<<< HEAD
                 else if (id1 < id2) // khi id1 nhỏ hơn id 2 thì trả về 1
-=======
-                else if (id1 > id2) // khi id1 lớn hơn id 2 thì trả về 1
->>>>>>> e24dc39 (version 1.0)
                     return 1;
                 else // các trường hợp còn lại trả về 0
                     return -1;

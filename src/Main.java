@@ -65,15 +65,9 @@ public class Main {
                         case "1": {
                             System.out.println(
                                     "+----------------------------------------------Display All Experience-----------------------------------------------+");
-<<<<<<< HEAD
                             System.out.println(
                                     "|id |        Name        | Birthday |  Phone   |       Email        |W.Hour|YOE|ProSkill  |Salary |Bonus   |Total   |");
                             System.out.println(
-=======
-                            System.out.println(
-                                    "|id |        Name        | Birthday |  Phone   |       Email        |W.Hour|YOE|ProSkill  |Salary |Bonus   |Total   |");
-                            System.out.println(
->>>>>>> e24dc39 (version 1.0)
                                     "+-------------------------------------------------------------------------------------------------------------------+");
                             uiManager.showExperienceEmployee();
                             System.out.println(
@@ -97,19 +91,11 @@ public class Main {
                                     "+----------------------------------------------Display All Intern----------------------------------------------------------+");
                             System.out.println(
                                     "|id |        Name        | Birthday |  Phone   |       Email        |W.Hour|Major     |Sem|UniName|Salary | Bonus |Total   |");
-<<<<<<< HEAD
                             System.out.println(
                                     "+--------------------------------------------------------------------------------------------------------------------------+");
                             uiManager.showInternEmployee();
                             System.out.println(
                                     "+--------------------------------------------------------------------------------------------------------------------------+");
-=======
-                            System.out.println(
-                                    "+--------------------------------------------------------------------------------------------------------------------------+");
-                            uiManager.showInternEmployee();
-                            System.out.println(
-                                    "+--------------------------------------------------------------------------------------------------------------------------+");
->>>>>>> e24dc39 (version 1.0)
                             break;
                         }
                         case "4": {
@@ -162,7 +148,6 @@ public class Main {
                         case "3": {
                             System.out.println(
                                     "+---------------------------------------------Display All Employees----------------------------------------------------------+");
-<<<<<<< HEAD
                             uiManager.SortEmployeeByID_MinDownMax();
                             uiManager.showAllEmployee();
                             System.out.println(
@@ -173,9 +158,6 @@ public class Main {
                             System.out.println(
                                     "+---------------------------------------------Display All Employees----------------------------------------------------------+");
                             uiManager.SortEmployeeByID_MaxDownMin();
-=======
-                            uiManager.SortEmployeeByID();
->>>>>>> e24dc39 (version 1.0)
                             uiManager.showAllEmployee();
                             System.out.println(
                                     "+----------------------------------------------------------------------------------------------------------------------------+");

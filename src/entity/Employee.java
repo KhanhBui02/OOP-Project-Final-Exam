@@ -1,23 +1,15 @@
 package entity;
 
-<<<<<<< HEAD
 import service.EmployeeManager;
 
 public abstract class Employee { // Lớp trừu tượng Employee
-=======
-public abstract class Employee { // Lớp trừu tượng Employee
-    public static long count = 0;
->>>>>>> e24dc39 (version 1.0)
     public String id;
     protected String fullName;
     protected String birthday;
     protected String phone;
     protected String email;
     protected double workingHours;
-<<<<<<< HEAD
     protected EmployeeManager employeeManager = new EmployeeManager();
-=======
->>>>>>> e24dc39 (version 1.0)
 
     public Employee() {
     }

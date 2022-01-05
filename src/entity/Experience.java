@@ -1,9 +1,5 @@
 package entity;
 
-<<<<<<< HEAD
-=======
-import service.EmployeeManager;
->>>>>>> e24dc39 (version 1.0)
 import ui.ScannerFactory;
 
 public class Experience extends Employee implements EmployeeSalary { // lớp Experience kế thừa từ lớp Employee
