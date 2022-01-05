@@ -28,31 +28,18 @@ public class Intern extends Employee implements EmployeeSalary { // lớp Intern
     // In ra thông tin của nhân viên Intern
     @Override
     public void showInfo() {
-
-        System.out.format("|%-3s|", id);
-        System.out.format("%-20s|", fullName);
-        System.out.format("%-10s|", birthday);
-        System.out.format("%.10s|", phone);
-        System.out.format("%-20s|", email);
-        System.out.format("%-6s|", Double.toString(Math.round(workingHours * 100.0) / 100.0)); // làm tròn số thập phân
-                                                                                               // và chuyển sang kiểu dữ
-                                                                                               // liệu String
+        super.showInfo();
+        System.out.format("%-7s|", Double.toString(Math.round(salary() * 100.0) / 100.0));
+        // làm tròn số thập phân (dùng Math.round ra được số int, sau đó chia cho 100 để
+        // lấy được 2 số thập phân phia sau) và chuyển sang kiểu dữ liệu String
+        System.out.format("%-8s|", Double.toString(Math.round(bonusTimeSalary() * 100.0) / 100.0)); // làm tròn số thập
+        // phân và chuyển sang kiểu dữ liệu String
+        System.out.format("%-8s|", Double.toString(Math.round(totalSalary() * 100.0) / 100.0));
+        // làm tròn số thập phân và chuyển sang kiểu dữ liệu String
         System.out.format("%-10s|", major);
         System.out.format("%-3d|", semester);
         System.out.format("%-7s|", universityName);
-        System.out.format("%-7s|", Double.toString(Math.round(salary() * 100.0) / 100.0)); // làm tròn số thập phân
-                                                                                           // (dùng Math.round ra được
-                                                                                           // số int, sau đó chia cho
-                                                                                           // 100 để lấy được 2 số thập
-                                                                                           // phân phia sau) và chuyển
-                                                                                           // sang kiểu dữ liệu String
-        System.out.format("%-7s|", Double.toString(Math.round(bonusTimeSalary() * 100.0) / 100.0)); // làm tròn số thập
-                                                                                                    // phân và chuyển
-                                                                                                    // sang kiểu dữ liệu
-                                                                                                    // String
-        System.out.format("%-8s|", Double.toString(Math.round(totalSalary() * 100.0) / 100.0)); // làm tròn số thập phân
-                                                                                                // và chuyển sang kiểu
-                                                                                                // dữ liệu String
+
         System.out.println(" ");
     }
 

@@ -24,7 +24,14 @@ public abstract class Employee { // Lớp trừu tượng Employee
         this.workingHours = workingHours;
     }
 
-    public abstract void showInfo();
+    public void showInfo() {
+        System.out.format("|%-3s|", id);
+        System.out.format("%-20s|", fullName);
+        System.out.format("%-10s|", birthday);
+        System.out.format("%.10s|", phone);
+        System.out.format("%-20s|", email);
+        System.out.format("%-6s|", Double.toString(Math.round(workingHours * 100.0) / 100.0));
+    }
 
     public abstract void updateInfoOfStaff();
 

@@ -23,17 +23,12 @@ public class Experience extends Employee implements EmployeeSalary { // lớp Ex
 
     @Override
     public void showInfo() {
-        System.out.format("|%-3s|", id);
-        System.out.format("%-20s|", fullName);
-        System.out.format("%-10s|", birthday);
-        System.out.format("%.10s|", phone);
-        System.out.format("%-20s|", email);
-        System.out.format("%-6s|", Double.toString(Math.round(workingHours * 100.0) / 100.0));
-        System.out.format("%-2s |", yearOfExperience);
-        System.out.format("%-10s|", proSkill);
+        super.showInfo();
         System.out.format("%-7s|", Double.toString(Math.round(salary() * 100.0) / 100.0));
         System.out.format("%-8s|", Double.toString(Math.round(bonusTimeSalary() * 100.0) / 100.0));
         System.out.format("%-8s|", Double.toString(Math.round(totalSalary() * 100.0) / 100.0));
+        System.out.format("%-3s|", yearOfExperience);
+        System.out.format("%-10s|", proSkill);
         System.out.println(" ");
     }
 

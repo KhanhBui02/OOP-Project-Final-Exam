@@ -26,18 +26,13 @@ public class Fresher extends Employee implements EmployeeSalary { // lớp Fresh
 
     @Override
     public void showInfo() {
-        System.out.format("|%-3s|", id);
-        System.out.format("%-20s|", fullName);
-        System.out.format("%-10s|", birthday);
-        System.out.format("%.10s|", phone);
-        System.out.format("%-20s|", email);
-        System.out.format("%-6s|", Double.toString(Math.round(workingHours * 100.0) / 100.0));
+        super.showInfo();
+        System.out.format("%-7s|", Double.toString(Math.round(salary() * 100.0) / 100.0));
+        System.out.format("%-8s|", Double.toString(Math.round(bonusTimeSalary() * 100.0) / 100.0));
+        System.out.format("%-8s|", Double.toString(Math.round(totalSalary() * 100.0) / 100.0));
         System.out.format("%-10s |", graduationDate);
         System.out.format("  %-2s   |", graduationRank);
         System.out.format("%-7s|", universityName);
-        System.out.format("%-7s|", Double.toString(Math.round(salary() * 100.0) / 100.0));
-        System.out.format("%-7s|", Double.toString(Math.round(bonusTimeSalary() * 100.0) / 100.0));
-        System.out.format("%-7s|", Double.toString(Math.round(totalSalary() * 100.0) / 100.0));
         System.out.println(" ");
     }
 
